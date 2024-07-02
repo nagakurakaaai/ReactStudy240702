@@ -21,22 +21,24 @@ function About () {
                             </div>
                             <div className="about__table">
                                 <table className="table-type01">
-                                <tr>
-                                    <th>日時</th>
-                                    <td>2030年5月30日（土） 13:00-翌朝13:00</td>
-                                </tr>
-                                <tr>
-                                    <th>会場</th>
-                                    <td>オンライン</td>
-                                </tr>
-                                <tr>
-                                    <th>定員</th>
-                                    <td>3名</td>
-                                </tr>
-                                <tr>
-                                    <th>参加費</th>
-                                    <td>無料</td>
-                                </tr>
+                                    <tbody>
+                                        <tr>
+                                            <th>日時</th>
+                                            <td>2030年5月30日（土） 13:00-翌朝13:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>会場</th>
+                                            <td>オンライン</td>
+                                        </tr>
+                                        <tr>
+                                            <th>定員</th>
+                                            <td>3名</td>
+                                        </tr>
+                                        <tr>
+                                            <th>参加費</th>
+                                            <td>無料</td>
+                                        </tr>
+                                    </tbody>
                                 </table>
                             </div>
                             <div className="about__btn">

@@ -15,7 +15,7 @@ function Resistor () {
                                 <div className="form__item">
                                     <div className="form__title">ご職業<span className="form__require">*必須</span></div>
                                     <span className="form__radio">
-                                        <input type="radio" id="type01" name="type" value="会社員" checked /><label
+                                        <input type="radio" id="type01" name="type" value="会社員" defaultChecked /><label
                                         htmlFor="type01">会社員</label></span>
                                     <span className="form__radio"><input type="radio" id="type02" name="type" value="個人事業主" /><label
                                         htmlFor="type02">個人事業主</label></span>
