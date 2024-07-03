@@ -1,5 +1,24 @@
+import { useState } from "react";
 
 function Resistor () {
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [phoneNumber, setPhoneNumber] = useState("")
+    const [question, setQuestion] = useState("")
+
+    const handleChangeName = (e) => {
+        setName(e.target.value)
+    }
+    const handleChangeEmail = (e) => {
+        setEmail(e.target.value)
+    }
+    const handleChangeNumber = (e) => {
+        setPhoneNumber(e.target.value)
+    }
+    const handleChangeQuestion = (e) => {
+        setQuestion(e.target.value)
+    }
+
     return(
         <>
             <section id="registor" className="registor section">
@@ -27,22 +46,22 @@ function Resistor () {
 
                                 <div className="form__item">
                                     <label htmlFor="name" className="form__title">お名前<span className="form__require">*必須</span></label>
-                                    <input type="text" id="name" name="name" required className="form__input" />
+                                    <input type="text" id="name" value={name} required className="form__input" onChange={handleChangeName} />
                                 </div>
 
                                 <div className="form__item">
                                     <label htmlFor="email" className="form__title">メールアドレス<span className="form__require">*必須</span></label>
-                                    <input type="email" id="email" name="email" required className="form__input" />
+                                    <input type="email" id="email" value={email} required className="form__input" onChange={handleChangeEmail} />
                                 </div>
 
                                 <div className="form__item">
                                     <label htmlFor="tel" className="form__title">電話番号<span className="form__note">（半角数字ハイフンなし）</span></label>
-                                    <input type="tel" id="tel" name="tel" className="form__input" />
+                                    <input type="tel" id="tel" value={phoneNumber} className="form__input" onChange={handleChangeNumber} />
                                 </div>
 
                                 <div className="form__item">
                                     <label htmlFor="comment" className="form__title">スピーカーに質問したいこと</label>
-                                    <textarea id="comment" name="comment" placeholder="ご自由にお書きください" className="form__textarea"></textarea>
+                                    <textarea id="comment" value={question} placeholder="ご自由にお書きください" className="form__textarea" onChange={handleChangeQuestion}></textarea>
                                 </div>
 
                                 <div className="form__item">
